@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B38386219CE964A00AF180E /* TextureTeapot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38386119CE964A00AF180E /* TextureTeapot.png */; };
+		0B38386819CE99BB00AF180E /* Line.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 0B38386419CE99BB00AF180E /* Line.fragsh */; };
+		0B38386919CE99BB00AF180E /* Line.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = 0B38386519CE99BB00AF180E /* Line.vertsh */; };
+		0B38386A19CE99BB00AF180E /* Simple.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 0B38386619CE99BB00AF180E /* Simple.fragsh */; };
+		0B38386B19CE99BB00AF180E /* Simple.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = 0B38386719CE99BB00AF180E /* Simple.vertsh */; };
+		0B38389719CEA64A00AF180E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B38389619CEA64A00AF180E /* Default-568h@2x.png */; };
+		0BE9A61E19CE699D00DC4B5E /* rmb.dat in Resources */ = {isa = PBXBuildFile; fileRef = 0BE9A61C19CE699D00DC4B5E /* rmb.dat */; };
+		0BE9A61F19CE699D00DC4B5E /* rmb.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0BE9A61D19CE699D00DC4B5E /* rmb.xml */; };
+		0BE9ACC419CD6FCC0019A618 /* lingmeng.dat in Resources */ = {isa = PBXBuildFile; fileRef = 0BE9ACC219CD6FCA0019A618 /* lingmeng.dat */; };
+		0BE9ACC519CD6FCC0019A618 /* lingmeng.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0BE9ACC319CD6FCB0019A618 /* lingmeng.xml */; };
+		0C11989919E539C1002F65D0 /* Churchill_NRM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C11989819E539C1002F65D0 /* Churchill_NRM.jpg */; };
+		0C11989B19E53A13002F65D0 /* Churchill.tga in Resources */ = {isa = PBXBuildFile; fileRef = 0C11989A19E53A13002F65D0 /* Churchill.tga */; };
+		0C3B733B19E7DEBE003A2B0B /* blackColor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 0C3B733A19E7DEBE003A2B0B /* blackColor.tga */; };
+		0C3B734219E7FED7003A2B0B /* whiteColor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C3B734119E7FED7003A2B0B /* whiteColor.jpg */; };
+		0C3B734819E800BF003A2B0B /* whiteColor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 0C3B734719E800BF003A2B0B /* whiteColor.tga */; };
+		0C471D9B19F3BB8C0032A53D /* ImageTargetsEAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1860C90C17F1EC2B00078D7A /* ImageTargetsEAGLView.mm */; };
+		0C471D9E19F3CF6D0032A53D /* SampleApplicationSession.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1868D20A17BD8EBE00E47566 /* SampleApplicationSession.mm */; };
+		0C471DBB19F3DBBD0032A53D /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C471DBA19F3DBBD0032A53D /* libVuforia.a */; };
+		1860C91017F1EC2B00078D7A /* ImageTargetsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1860C90E17F1EC2B00078D7A /* ImageTargetsViewController.mm */; };
+		1868D1B517BD472000E47566 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868D1B417BD472000E47566 /* UIKit.framework */; };
+		1868D1B717BD472000E47566 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868D1B617BD472000E47566 /* Foundation.framework */; };
+		1868D1B917BD472000E47566 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868D1B817BD472000E47566 /* CoreGraphics.framework */; };
+		1868D1BF17BD472000E47566 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1868D1BD17BD472000E47566 /* InfoPlist.strings */; };
+		1868D1C117BD472000E47566 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868D1C017BD472000E47566 /* main.m */; };
+		1868D1C517BD472000E47566 /* SampleAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868D1C417BD472000E47566 /* SampleAppAppDelegate.m */; };
+		1868D20517BD892800E47566 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868D20417BD892800E47566 /* QuartzCore.framework */; };
+		1868D20D17BD8EBE00E47566 /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1868D20817BD8EBE00E47566 /* Texture.mm */; };
+		188BB41717BD96490080509A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188BB41617BD96490080509A /* Security.framework */; };
+		188BB41917BD96620080509A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188BB41817BD96620080509A /* CoreMotion.framework */; };
+		188BB41B17BD966A0080509A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188BB41A17BD966A0080509A /* OpenGLES.framework */; };
+		188BB41D17BD967C0080509A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188BB41C17BD967B0080509A /* SystemConfiguration.framework */; };
+		188BB42617BD97CC0080509A /* SampleApplicationUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188BB42417BD97CC0080509A /* SampleApplicationUtils.cpp */; };
+		188BB43A17BD999A0080509A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188BB43917BD999A0080509A /* AVFoundation.framework */; };
+		188BB43C17BD99A60080509A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188BB43B17BD99A60080509A /* CoreMedia.framework */; };
+		188BB43E17BD99DD0080509A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188BB43D17BD99DD0080509A /* CoreVideo.framework */; };
+		18F1372017E0D83700F5846D /* SampleApplicationShaderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F1371F17E0D83700F5846D /* SampleApplicationShaderUtils.m */; };
+		18F23EC3180877570038252A /* buildings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18F23EC2180877570038252A /* buildings.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B38386119CE964A00AF180E /* TextureTeapot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextureTeapot.png; sourceTree = "<group>"; };
+		0B38386419CE99BB00AF180E /* Line.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Line.fragsh; sourceTree = "<group>"; };
+		0B38386519CE99BB00AF180E /* Line.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Line.vertsh; sourceTree = "<group>"; };
+		0B38386619CE99BB00AF180E /* Simple.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Simple.fragsh; sourceTree = "<group>"; };
+		0B38386719CE99BB00AF180E /* Simple.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Simple.vertsh; sourceTree = "<group>"; };
+		0B38389619CEA64A00AF180E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0B38389A19CFCA1E00AF180E /* jump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jump.h; sourceTree = "<group>"; };
+		0BE9A61C19CE699D00DC4B5E /* rmb.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = rmb.dat; sourceTree = "<group>"; };
+		0BE9A61D19CE699D00DC4B5E /* rmb.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = rmb.xml; sourceTree = "<group>"; };
+		0BE9ACC219CD6FCA0019A618 /* lingmeng.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = lingmeng.dat; sourceTree = "<group>"; };
+		0BE9ACC319CD6FCB0019A618 /* lingmeng.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lingmeng.xml; sourceTree = "<group>"; };
+		0C11989719E5390D002F65D0 /* churchill.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = churchill.h; sourceTree = "<group>"; };
+		0C11989819E539C1002F65D0 /* Churchill_NRM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Churchill_NRM.jpg; sourceTree = "<group>"; };
+		0C11989A19E53A13002F65D0 /* Churchill.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Churchill.tga; sourceTree = "<group>"; };
+		0C14B3E319E3A9AE0069C22A /* knife.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = knife.h; sourceTree = "<group>"; };
+		0C14B3E619E3ACB10069C22A /* dragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dragon.h; sourceTree = "<group>"; };
+		0C3B733A19E7DEBE003A2B0B /* blackColor.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = blackColor.tga; sourceTree = "<group>"; };
+		0C3B733E19E7EBFB003A2B0B /* myjump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myjump.h; sourceTree = "<group>"; };
+		0C3B734119E7FED7003A2B0B /* whiteColor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteColor.jpg; sourceTree = "<group>"; };
+		0C3B734719E800BF003A2B0B /* whiteColor.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = whiteColor.tga; sourceTree = "<group>"; };
+		0C471DBA19F3DBBD0032A53D /* libVuforia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVuforia.a; path = QCAR/lib/arm/libVuforia.a; sourceTree = "<group>"; };
+		0C57998419E67CE500E8C836 /* lh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lh.h; sourceTree = "<group>"; };
+		0CA47C0319D6AF4C00AA6592 /* cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cube.h; sourceTree = "<group>"; };
+		0CA47C0419D6AF8100AA6592 /* banana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = banana.h; sourceTree = "<group>"; };
+		1860C90B17F1EC2B00078D7A /* ImageTargetsEAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTargetsEAGLView.h; sourceTree = "<group>"; };
+		1860C90C17F1EC2B00078D7A /* ImageTargetsEAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageTargetsEAGLView.mm; sourceTree = "<group>"; };
+		1860C90D17F1EC2B00078D7A /* ImageTargetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTargetsViewController.h; sourceTree = "<group>"; };
+		1860C90E17F1EC2B00078D7A /* ImageTargetsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageTargetsViewController.mm; sourceTree = "<group>"; };
+		1868D1B117BD472000E47566 /* ARdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1868D1B417BD472000E47566 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1868D1B617BD472000E47566 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1868D1B817BD472000E47566 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1868D1BC17BD472000E47566 /* ARdemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARdemo-Info.plist"; sourceTree = "<group>"; };
+		1868D1BE17BD472000E47566 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1868D1C017BD472000E47566 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1868D1C217BD472000E47566 /* ARdemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARdemo-Prefix.pch"; sourceTree = "<group>"; };
+		1868D1C317BD472000E47566 /* SampleAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleAppAppDelegate.h; sourceTree = "<group>"; };
+		1868D1C417BD472000E47566 /* SampleAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppAppDelegate.m; sourceTree = "<group>"; };
+		1868D20417BD892800E47566 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1868D20617BD8EBE00E47566 /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
+		1868D20717BD8EBE00E47566 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
+		1868D20817BD8EBE00E47566 /* Texture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Texture.mm; sourceTree = "<group>"; };
+		1868D20917BD8EBE00E47566 /* SampleApplicationSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleApplicationSession.h; sourceTree = "<group>"; };
+		1868D20A17BD8EBE00E47566 /* SampleApplicationSession.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SampleApplicationSession.mm; sourceTree = "<group>"; };
+		188AD58C17DE3C02008BE2C8 /* Quad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quad.h; sourceTree = "<group>"; };
+		188BB41617BD96490080509A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		188BB41817BD96620080509A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		188BB41A17BD966A0080509A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		188BB41C17BD967B0080509A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		188BB42417BD97CC0080509A /* SampleApplicationUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SampleApplicationUtils.cpp; sourceTree = "<group>"; };
+		188BB42517BD97CC0080509A /* SampleApplicationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleApplicationUtils.h; sourceTree = "<group>"; };
+		188BB43917BD999A0080509A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		188BB43B17BD99A60080509A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		188BB43D17BD99DD0080509A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		18F1371E17E0D83700F5846D /* SampleApplicationShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleApplicationShaderUtils.h; sourceTree = "<group>"; };
+		18F1371F17E0D83700F5846D /* SampleApplicationShaderUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleApplicationShaderUtils.m; sourceTree = "<group>"; };
+		18F23EC2180877570038252A /* buildings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = buildings.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1868D1AE17BD472000E47566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C471DBB19F3DBBD0032A53D /* libVuforia.a in Frameworks */,
+				188BB43E17BD99DD0080509A /* CoreVideo.framework in Frameworks */,
+				188BB43C17BD99A60080509A /* CoreMedia.framework in Frameworks */,
+				188BB43A17BD999A0080509A /* AVFoundation.framework in Frameworks */,
+				188BB41D17BD967C0080509A /* SystemConfiguration.framework in Frameworks */,
+				188BB41B17BD966A0080509A /* OpenGLES.framework in Frameworks */,
+				188BB41917BD96620080509A /* CoreMotion.framework in Frameworks */,
+				188BB41717BD96490080509A /* Security.framework in Frameworks */,
+				1868D20517BD892800E47566 /* QuartzCore.framework in Frameworks */,
+				1868D1B517BD472000E47566 /* UIKit.framework in Frameworks */,
+				1868D1B717BD472000E47566 /* Foundation.framework in Frameworks */,
+				1868D1B917BD472000E47566 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B38386319CE99BB00AF180E /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				0B38386419CE99BB00AF180E /* Line.fragsh */,
+				0B38386519CE99BB00AF180E /* Line.vertsh */,
+				0B38386619CE99BB00AF180E /* Simple.fragsh */,
+				0B38386719CE99BB00AF180E /* Simple.vertsh */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		1860C8F917F1EAE100078D7A /* ImageTargets */ = {
+			isa = PBXGroup;
+			children = (
+				0CA47C0419D6AF8100AA6592 /* banana.h */,
+				0C14B3E619E3ACB10069C22A /* dragon.h */,
+				0C11989719E5390D002F65D0 /* churchill.h */,
+				0C57998419E67CE500E8C836 /* lh.h */,
+				0C14B3E319E3A9AE0069C22A /* knife.h */,
+				0C3B733E19E7EBFB003A2B0B /* myjump.h */,
+				0CA47C0319D6AF4C00AA6592 /* cube.h */,
+				0B38389A19CFCA1E00AF180E /* jump.h */,
+				1860C90B17F1EC2B00078D7A /* ImageTargetsEAGLView.h */,
+				1860C90C17F1EC2B00078D7A /* ImageTargetsEAGLView.mm */,
+				1860C90D17F1EC2B00078D7A /* ImageTargetsViewController.h */,
+				1860C90E17F1EC2B00078D7A /* ImageTargetsViewController.mm */,
+			);
+			path = ImageTargets;
+			sourceTree = "<group>";
+		};
+		1860C90017F1EB6F00078D7A /* ImageTargets */ = {
+			isa = PBXGroup;
+			children = (
+				0BE9A61C19CE699D00DC4B5E /* rmb.dat */,
+				0BE9A61D19CE699D00DC4B5E /* rmb.xml */,
+				0BE9ACC219CD6FCA0019A618 /* lingmeng.dat */,
+				0BE9ACC319CD6FCB0019A618 /* lingmeng.xml */,
+			);
+			path = ImageTargets;
+			sourceTree = "<group>";
+		};
+		1868D1A817BD472000E47566 = {
+			isa = PBXGroup;
+			children = (
+				0B38389619CEA64A00AF180E /* Default-568h@2x.png */,
+				1868D1BA17BD472000E47566 /* ARdemo */,
+				1868D1B317BD472000E47566 /* Frameworks */,
+				1868D1B217BD472000E47566 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1868D1B217BD472000E47566 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1868D1B117BD472000E47566 /* ARdemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1868D1B317BD472000E47566 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C471DBA19F3DBBD0032A53D /* libVuforia.a */,
+				188BB43D17BD99DD0080509A /* CoreVideo.framework */,
+				188BB43B17BD99A60080509A /* CoreMedia.framework */,
+				188BB43917BD999A0080509A /* AVFoundation.framework */,
+				1868D1B417BD472000E47566 /* UIKit.framework */,
+				1868D1B617BD472000E47566 /* Foundation.framework */,
+				1868D1B817BD472000E47566 /* CoreGraphics.framework */,
+				1868D20417BD892800E47566 /* QuartzCore.framework */,
+				188BB41C17BD967B0080509A /* SystemConfiguration.framework */,
+				188BB41A17BD966A0080509A /* OpenGLES.framework */,
+				188BB41817BD96620080509A /* CoreMotion.framework */,
+				188BB41617BD96490080509A /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1868D1BA17BD472000E47566 /* ARdemo */ = {
+			isa = PBXGroup;
+			children = (
+				1868D1F717BD6B0B00E47566 /* Resources */,
+				1868D1EA17BD4ED100E47566 /* Classes */,
+				1868D1BB17BD472000E47566 /* Supporting Files */,
+			);
+			name = ARdemo;
+			path = VuforiaSamples;
+			sourceTree = "<group>";
+		};
+		1868D1BB17BD472000E47566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1868D1C317BD472000E47566 /* SampleAppAppDelegate.h */,
+				1868D1C417BD472000E47566 /* SampleAppAppDelegate.m */,
+				1868D1BC17BD472000E47566 /* ARdemo-Info.plist */,
+				1868D1BD17BD472000E47566 /* InfoPlist.strings */,
+				1868D1C017BD472000E47566 /* main.m */,
+				1868D1C217BD472000E47566 /* ARdemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1868D1EA17BD4ED100E47566 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				188AD57717DE3A32008BE2C8 /* apps */,
+				1868D1EC17BD4ED100E47566 /* SampleApplication */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1868D1EC17BD4ED100E47566 /* SampleApplication */ = {
+			isa = PBXGroup;
+			children = (
+				0B38386319CE99BB00AF180E /* shaders */,
+				1868D20917BD8EBE00E47566 /* SampleApplicationSession.h */,
+				1868D20A17BD8EBE00E47566 /* SampleApplicationSession.mm */,
+				188BB42517BD97CC0080509A /* SampleApplicationUtils.h */,
+				188BB42417BD97CC0080509A /* SampleApplicationUtils.cpp */,
+				18F1371E17E0D83700F5846D /* SampleApplicationShaderUtils.h */,
+				18F1371F17E0D83700F5846D /* SampleApplicationShaderUtils.m */,
+				1868D20717BD8EBE00E47566 /* Texture.h */,
+				1868D20817BD8EBE00E47566 /* Texture.mm */,
+				1868D20617BD8EBE00E47566 /* Teapot.h */,
+				188AD58C17DE3C02008BE2C8 /* Quad.h */,
+			);
+			path = SampleApplication;
+			sourceTree = "<group>";
+		};
+		1868D1F717BD6B0B00E47566 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1868D1F817BD6B0B00E47566 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1868D1F817BD6B0B00E47566 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				18F23EC2180877570038252A /* buildings.txt */,
+				1860C90017F1EB6F00078D7A /* ImageTargets */,
+				0B38386119CE964A00AF180E /* TextureTeapot.png */,
+				0C3B734119E7FED7003A2B0B /* whiteColor.jpg */,
+				0C3B734719E800BF003A2B0B /* whiteColor.tga */,
+				0C11989819E539C1002F65D0 /* Churchill_NRM.jpg */,
+				0C3B733A19E7DEBE003A2B0B /* blackColor.tga */,
+				0C11989A19E53A13002F65D0 /* Churchill.tga */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		188AD57717DE3A32008BE2C8 /* apps */ = {
+			isa = PBXGroup;
+			children = (
+				1860C8F917F1EAE100078D7A /* ImageTargets */,
+			);
+			path = apps;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1868D1B017BD472000E47566 /* ARdemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1868D1D717BD472000E47566 /* Build configuration list for PBXNativeTarget "ARdemo" */;
+			buildPhases = (
+				1868D1AD17BD472000E47566 /* Sources */,
+				1868D1AE17BD472000E47566 /* Frameworks */,
+				1868D1AF17BD472000E47566 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARdemo;
+			productName = VuforiaSamples;
+			productReference = 1868D1B117BD472000E47566 /* ARdemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1868D1A917BD472000E47566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SampleApp;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Qualcomm;
+			};
+			buildConfigurationList = 1868D1AC17BD472000E47566 /* Build configuration list for PBXProject "ARdemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1868D1A817BD472000E47566;
+			productRefGroup = 1868D1B217BD472000E47566 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1868D1B017BD472000E47566 /* ARdemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1868D1AF17BD472000E47566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1868D1BF17BD472000E47566 /* InfoPlist.strings in Resources */,
+				0C11989B19E53A13002F65D0 /* Churchill.tga in Resources */,
+				18F23EC3180877570038252A /* buildings.txt in Resources */,
+				0C3B734219E7FED7003A2B0B /* whiteColor.jpg in Resources */,
+				0C11989919E539C1002F65D0 /* Churchill_NRM.jpg in Resources */,
+				0BE9ACC419CD6FCC0019A618 /* lingmeng.dat in Resources */,
+				0C3B734819E800BF003A2B0B /* whiteColor.tga in Resources */,
+				0BE9ACC519CD6FCC0019A618 /* lingmeng.xml in Resources */,
+				0BE9A61E19CE699D00DC4B5E /* rmb.dat in Resources */,
+				0BE9A61F19CE699D00DC4B5E /* rmb.xml in Resources */,
+				0B38386219CE964A00AF180E /* TextureTeapot.png in Resources */,
+				0B38386819CE99BB00AF180E /* Line.fragsh in Resources */,
+				0B38386919CE99BB00AF180E /* Line.vertsh in Resources */,
+				0B38386A19CE99BB00AF180E /* Simple.fragsh in Resources */,
+				0C3B733B19E7DEBE003A2B0B /* blackColor.tga in Resources */,
+				0B38386B19CE99BB00AF180E /* Simple.vertsh in Resources */,
+				0B38389719CEA64A00AF180E /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1868D1AD17BD472000E47566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C471D9B19F3BB8C0032A53D /* ImageTargetsEAGLView.mm in Sources */,
+				1868D1C117BD472000E47566 /* main.m in Sources */,
+				1868D1C517BD472000E47566 /* SampleAppAppDelegate.m in Sources */,
+				1868D20D17BD8EBE00E47566 /* Texture.mm in Sources */,
+				188BB42617BD97CC0080509A /* SampleApplicationUtils.cpp in Sources */,
+				0C471D9E19F3CF6D0032A53D /* SampleApplicationSession.mm in Sources */,
+				18F1372017E0D83700F5846D /* SampleApplicationShaderUtils.m in Sources */,
+				1860C91017F1EC2B00078D7A /* ImageTargetsViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1868D1BD17BD472000E47566 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1868D1BE17BD472000E47566 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1868D1D517BD472000E47566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../build/include;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1868D1D617BD472000E47566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../build/include;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1868D1D817BD472000E47566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 21;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VuforiaSamples/ARdemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = QCAR/include;
+				INFOPLIST_FILE = "VuforiaSamples/ARdemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = QCAR/lib/arm;
+				PRODUCT_NAME = ARdemo;
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1868D1D917BD472000E47566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 21;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VuforiaSamples/ARdemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = QCAR/include;
+				INFOPLIST_FILE = "VuforiaSamples/ARdemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = QCAR/lib/arm;
+				PRODUCT_NAME = ARdemo;
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1868D1AC17BD472000E47566 /* Build configuration list for PBXProject "ARdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868D1D517BD472000E47566 /* Debug */,
+				1868D1D617BD472000E47566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1868D1D717BD472000E47566 /* Build configuration list for PBXNativeTarget "ARdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868D1D817BD472000E47566 /* Debug */,
+				1868D1D917BD472000E47566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1868D1A917BD472000E47566 /* Project object */;
+}
